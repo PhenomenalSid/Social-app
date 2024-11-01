@@ -9,9 +9,9 @@ import {
 
 const router = express.Router();
 
+router.get("/:id", getUserController);
 router.put("/:id", updateUserController);
 router.delete("/:id", deleteUserController);
-router.get("/:id", getUserController);
 router.put("/follow/:id", followUserController);
 router.put("/unfollow/:id", unfollowUserController);
 
